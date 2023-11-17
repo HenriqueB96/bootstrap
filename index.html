@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Resident</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+        header h1 {
+            padding: 26px;
+            text-align: center;
+            color: red;
+            background-color: black;
+        }
+        #carousel-main .carousel-item img {
+            height: 350px;
+        }
+        #img-p{
+            height: 25vw;
+        }
+        #item-card{
+            padding: 13px;
+        }
+
+    </style>
+</head>
+<body>
+    <header >
+        <h1>Project Resident </h1>
+    </header>
+    <!-- carousel de imagem -->
+    <div class="container-carousel">
+        <div id="carousel-main" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./img/cosplay-5344250_1280.jpg" class="d-block w-100" alt="foto-homem">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/silhouette-3777403_1280.jpg" class="d-block w-100" alt="foto-terror-maos">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/gas-mask-6651247_1280.jpg" class="d-block w-100" alt="foto-homem-mascara-gas">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/villa-3237114_1280.jpg" class="d-block w-100" alt="foto-villa">
+                </div>
+            </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="3" aria-label="Slide 4"></button>            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-main" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-main" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div>
+        <h1 class="text-center text-bg-dark" style="padding: 16px;">Adiquira ja seu jogo</h1>
+    </div>
+    <div class="container text-center ">
+        <!-- coluna de adiquirir o jogo -->
+        <div class="row">
+            <div class="col">
+                <div id="item-card"  class="card mb-3 text-bg-danger" style="width: 18rem">
+                    <div class="card-body">
+                    <h5 class="card-title">Compre a Beta</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-success">Comprar Aqui</a>
+                    </div>
+                </div>
+                
+                <div id="item-card" class="card text-center mb-3 text-bg-primary" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Compre o GamePass</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-success">Comprar Aqui</a>
+                    </div>
+                </div>
+                
+                <div id="item-card" class="card text-center text-bg-warning" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Compre o Jogo Completo</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-success">Comprar Aqui</a>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- coluna jill e Umbrela -->
+            <div class="col">
+                <div class="card text-bg-dark  card border-danger mb-3"  style="width: 18rem">
+                    <header><h1 class="card-title ">Personagem Bônus: JILL</h1></header>
+                    <div class="card-body">
+                        <img id="img-p" src="./img/resident-evil-7342211_1280 (1).jpg" class="card-img-top" alt="Imagem-personagem-jill">
+                    <strong class=" strong h2 text-bg ">Ao comprar o jogo antecipado, ganhará um personagem bônus ! </strong><br> 
+                    <a href="#" class="btn btn-primary"style="margin-top: 20px;">Veja aqui</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-bg-dark  card border-danger mb-3"  style="width: 18rem">
+                    <header><h1 class="card-title ">Fase Bônus: Umbrella</h1></header>
+                    <div class="card-body">
+                        <img id="img-p" src="./img/umbrella.jpg" class="card-img-top " alt="Imagem-personagem-jill">
+                    <strong class=" strong h2 text-bg ">Ao comprar o jogo antecipado, ganhará um Mapa/Fase bônus ! </strong><br> 
+                    <a href="#" class="btn btn-primary " style="margin-top: 20px;">Veja aqui</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <div class="d-flex justify-content-center text-bg-dark-lg h1">
+                <div class="p-5">&copy; Site Destinado para treinamento de atividade</div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
